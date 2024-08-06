@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa; /* Light blue background */
+    color: #004d40; /* Dark cyan text */
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Center align the navbar items */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.0); /* Semi-transparent background */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(193, 35, 114, 0.1); /* Subtle shadow for better visibility */
+}
+
+.logo-container {
+    position: absolute;
+    left: 20px; /* Position the logo at the top left corner */
+    top: 10px;
+}
+
+.logo {
+    width: 100px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensures the image is treated as a block element */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.nav-links li {
+    margin: 0 15px; /* Space between each nav link */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff; /* White color for better visibility */
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif; /* Use the Roboto font */
+    transition: color 0.3s, border-bottom 0.3s; /* Smooth transition for hover effect */
+    padding: 10px; /* Add padding for better click area */
+}
+
+.nav-links a:hover {
+    color: #131212; /* Change to a nice color on hover */
+    border-bottom: 2px solid #ff4081; /* Add an underline effect on hover */
+}
+.landing {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    color: #ffffff;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+
+.carousel-image.active {
+    opacity: 1;
+}
+
+.content h1 {
+    font-size: 48px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-out;
+}
+
+.content p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.start-btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #ffffff; /* White text color */
+    background-color: transparent; /* Transparent background */
+    border: 2px solid #ffffff; /* White border */
+    border-radius: 50px; /* Oval shape */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Smooth transition */
+    font-family: 'Roboto', sans-serif; /* Consistent font */
+}
+
+.start-btn:hover {
+    background-color: #ffffff; /* White background on hover */
+    color: #004d40; /* Dark cyan text color on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

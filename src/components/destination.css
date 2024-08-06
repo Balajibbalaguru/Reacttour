@@ -1,0 +1,180 @@
+body {
+    background: url('images/destination_BG.png') no-repeat center center; /* Ensure correct path */
+    background-size: cover; /* Ensure the image covers the entire body */
+}
+
+
+.destinations {
+    padding: 50px 20px;
+    background-color: rgba(255, 255, 255, 0.0);
+    text-align: center;
+}
+
+.destinations h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #004d40; /* Consistent theme color */
+    margin-bottom: 30px;
+    font-family: 'Playfair Display', serif; /* Consistent font */
+}
+
+.search-filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#search-bar {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: 1px solid #cccccc;
+    width: 300px;
+    margin-right: 20px;
+}
+
+.filters select {
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    color: #004d40; /* Text color */
+}
+
+.destination-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.destination-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.destination-item {
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.destination-item:hover {
+    transform: scale(1.05);
+}
+
+.destination-item img {
+    width: 100%;
+    height: 190px; /* Set a smaller height for the image */
+    object-fit: cover; /* Ensures the image covers the container */
+    border-bottom: 2px solid #e0f7fa; /* Optional border below the image */
+}
+
+.destination-info {
+    padding: 15px;
+    text-align: left;
+}
+
+
+.destination-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #004d40;
+}
+
+.destination-info p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #0c0b0b;
+}
+
+.destination-info .rating {
+    font-size: 16px;
+    color: #ffbf00; /* Gold color for ratings */
+}
+
+.view-more {
+    padding: 8px 16px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #004d40;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.view-more:hover {
+    background-color: #0c0c0c; /* Lighter cyan color on hover */
+}
+
+.favorite {
+    font-size: 20px;
+    color: #ff4081; /* Pink color for heart */
+    margin-left: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.favorite.active {
+    color: #ff0000; /* Red color when active */
+}
+.navbar {
+    display: flex;
+    justify-content: center; /* Center align the navbar items */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.0); /* Semi-transparent background */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(193, 35, 114, 0.1); /* Subtle shadow for better visibility */
+}
+
+.logo-container {
+    position: absolute;
+    left: 20px; /* Position the logo at the top left corner */
+    top: 10px;
+}
+
+.logo {
+    width: 100px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensures the image is treated as a block element */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.nav-links li {
+    margin: 0 15px; /* Space between each nav link */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff; /* White color for better visibility */
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif; /* Use the Roboto font */
+    transition: color 0.3s, border-bottom 0.3s; /* Smooth transition for hover effect */
+    padding: 10px; /* Add padding for better click area */
+}
+
+.nav-links a:hover {
+    color: #131212; /* Change to a nice color on hover */
+    border-bottom: 2px solid #ff4081; /* Add an underline effect on hover */
+}
+
+.active{
+   background-color: red;
+}
